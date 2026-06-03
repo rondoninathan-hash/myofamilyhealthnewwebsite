@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Myo Family Health — Myofunctional Therapy</title>
+<meta name="description" content="Myofunctional therapy for happier, healthier families. Serving the Sacramento Valley & San Francisco Bay Area, in person and online." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="i-base" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></g>
+  </defs>
+  <symbol id="ic-tree" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="20" cy="15" r="11"/>
+    <path d="M20 26 V9 M20 17 L13.5 11 M20 17 L26.5 11 M20 21 L15.5 17 M20 21 L24.5 17"/>
+    <path d="M20 26 V36 M20 36 L14.5 39 M20 36 L25.5 39"/>
+    <circle cx="20" cy="8.4" r="1.1" fill="currentColor" stroke="none"/>
+    <circle cx="13.2" cy="10.6" r="1.1" fill="currentColor" stroke="none"/>
+    <circle cx="26.8" cy="10.6" r="1.1" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="ic-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.11 6.46L12 17.3l-5.81 3.06 1.11-6.46-4.7-4.58 6.5-.94z"/></symbol>
+  <symbol id="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+  <symbol id="ic-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19C4 11 9 5 20 4c0 9-4 15-13 15.5"/><path d="M4 19c3-5 7-7 11-8"/></symbol>
+  <symbol id="ic-wind" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10a3 3 0 1 0-3-3M3 16h13a3 3 0 1 1-3 3M3 12h7"/></symbol>
+  <symbol id="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13.5A8 8 0 1 1 10.5 4 6.5 6.5 0 0 0 20 13.5z"/></symbol>
+  <symbol id="ic-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-.5-7.97A5 5 0 0 1 16 9.5a3.5 3.5 0 0 1 .5 8.5z"/></symbol>
+  <symbol id="ic-smile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5a4.5 4.5 0 0 0 7 0"/><path d="M9 9.5h.01M15 9.5h.01"/></symbol>
+  <symbol id="ic-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+  <symbol id="ic-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="ic-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6c-1.5-1.2-3.6-2-6-2-1 0-2 .1-3 .4v13c1-.3 2-.4 3-.4 2.4 0 4.5.8 6 2 1.5-1.2 3.6-2 6-2 1 0 2 .1 3 .4v-13c-1-.3-2-.4-3-.4-2.4 0-4.5.8-6 2zM12 6v13"/></symbol>
+  <symbol id="ic-cup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h12v5a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5z"/><path d="M17 10h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M8 3v2.5M12 3v2.5"/></symbol>
+  <symbol id="ic-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 7 4-15 3 8h4"/></symbol>
+  <symbol id="ic-help" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.2 9.3a2.8 2.8 0 0 1 5.4 1c0 1.9-2.6 2.3-2.6 4"/><path d="M12 17.5h.01"/></symbol>
+  <symbol id="ic-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 19v-1.5a3.5 3.5 0 0 0-3.5-3.5h-5A3.5 3.5 0 0 0 4 17.5V19"/><circle cx="10" cy="8" r="3.2"/><path d="M20 19v-1.5a3.5 3.5 0 0 0-2.6-3.4M15.5 5.2a3.2 3.2 0 0 1 0 5.6"/></symbol>
+  <symbol id="ic-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 10c0 5-7 11-7 11s-7-6-7-11a7 7 0 0 1 14 0z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="ic-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+  <symbol id="ic-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M4 9h16M8 3v4M16 3v4"/></symbol>
+  <symbol id="ic-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 4h3l1.5 4-2 1.3a11 11 0 0 0 5.7 5.7L16 13l4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 6.2 2 2 0 0 1 6.5 4z"/></symbol>
+  <symbol id="ic-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></symbol>
+  <symbol id="ic-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="ic-youtube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2l5 2.8-5 2.8z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="ic-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M18 6l-2.5 2.5M8.5 15.5L6 18"/></symbol>
+</svg>
+
+<!-- ============ GOOGLE REVIEWS TOP BAR ============ -->
+<div class="reviews-bar" aria-label="Google reviews">
+  <div class="reviews-strip">
+    <span class="g-logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h6.47a5.53 5.53 0 0 1-2.4 3.63v3h3.86c2.26-2.08 3.57-5.15 3.57-8.87z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09A12 12 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.27 14.29A7.21 7.21 0 0 1 4.89 12c0-.8.14-1.57.38-2.29V6.62H1.29A12 12 0 0 0 0 12c0 1.94.46 3.77 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0A12 12 0 0 0 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg>
+    </span>
+    <span class="reviews-rating-row"><b>5.0</b>
+      <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg></span>
+    </span>
+    <span class="reviews-count"><b>17</b> Google reviews</span>
+    <span class="reviews-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg> Hover to read reviews</span>
+  </div>
+  <div class="reviews-panel">
+    <div class="reviews-panel-inner">
+      <div class="reviews-track">
+        <article class="review-card" tabindex="0" role="button" aria-label="Read full Google review">
+          <span class="stars"><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg></span>
+          <p>"Amy is the absolute BEST and I cannot thank her enough for how much she has changed my life. I started Myo therapy with her (had about 12 sessions) and each session she prepared new exercises, and made any modifications I needed…"</p>
+          <div class="review-full" hidden>"Amy is the absolute BEST and I cannot thank her enough for how much she has changed my life. I started Myo therapy with her (had about 12 sessions) and each session she prepared new exercises, and made any modifications I needed. She is incredibly kind, patient, and truly invested in her clients' progress every step of the way."</div>
+          <span class="review-author"><span class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h6.47a5.53 5.53 0 0 1-2.4 3.63v3h3.86c2.26-2.08 3.57-5.15 3.57-8.87z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09A12 12 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.27 14.29A7.21 7.21 0 0 1 4.89 12c0-.8.14-1.57.38-2.29V6.62H1.29A12 12 0 0 0 0 12c0 1.94.46 3.77 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0A12 12 0 0 0 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg></span> Google review</span>
+          <span class="review-more">Read full review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </article>
+        <article class="review-card" tabindex="0" role="button" aria-label="Read full Google review">
+          <span class="stars"><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg></span>
+          <p>"We are so grateful for Ms. Amy! She literally changed my son's life. We were in the great debate of getting a tongue tie surgery done at the age of 10. Amy helped us all the way through — she made every visit so comforting that we made the right decision…"</p>
+          <div class="review-full" hidden>"We are so grateful for Ms. Amy! She literally changed my son's life. We were in the great debate of getting a tongue tie surgery done at the age of 10. Amy helped us all the way through — from phone calls answering a multitude of questions and concerns, providing articles and books with research before even getting started. She then made every visit so comforting that we made the right decision; she explained every exercise and stretch with what areas he was working and why. She was always available via phone, text, email… she reviewed videos and gave feedback to help him do the exercises correctly between visits. She was in constant contact with our dentist as well to monitor his progress prior and following his surgery. Myo therapy is hard work and takes a commitment, but Amy was there every step of the way adjusting to meet my son's needs and encouraging him, helping him build his confidence. He has improved so much in his sleep habits, his eating, and speech."</div>
+          <span class="review-author"><span class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h6.47a5.53 5.53 0 0 1-2.4 3.63v3h3.86c2.26-2.08 3.57-5.15 3.57-8.87z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09A12 12 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.27 14.29A7.21 7.21 0 0 1 4.89 12c0-.8.14-1.57.38-2.29V6.62H1.29A12 12 0 0 0 0 12c0 1.94.46 3.77 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0A12 12 0 0 0 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg></span> Google review</span>
+          <span class="review-more">Read full review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </article>
+        <article class="review-card" tabindex="0" role="button" aria-label="Read full Google review">
+          <span class="stars"><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg></span>
+          <p>"Amy is a passionate and knowledgeable Myo Functional Therapist. She has helped my son work through his breathing exercises and fears of a tongue tie release. Her patience and compassion has made all the difference in the world to my son…"</p>
+          <div class="review-full" hidden>"Amy is a passionate and knowledgeable Myo Functional Therapist. She has helped my son (then 12/13, now 15) work through his breathing exercises and fears of a tongue tie release. Her patience and compassion has made all the difference in the world to my son. He was able to have a tongue tie release with a strong tongue, proper breathing, and complete confidence. We had several sessions with Amy before she let us know that he would benefit from a tongue tie release, and she made sure he was physically and emotionally prepared for the minor surgery. She is an expert and professional in her field and a mentor to our son. Amy would do detailed practices of each exercise, had a handout with every explanation of how and why we were to do each exercise, and was a great communicator with us, and our other doctors who were involved in my son's care including the pediatrician, dentist, orthodontist, and osteopath doctor. After the tongue tie release, Amy was incredibly caring and attentive to any questions we had. She encouraged my son to be diligent with his exercise post op, which really paid off — he had great healing with no scarring. He continues to keep his \u201ctongue on the spot\u201d out of habit and is always checking to see if I have mine there too. Our family's highest recommendation for Myo Family Health, with nothing but deep respect, admiration, and friendship for Amy."</div>
+          <span class="review-author"><span class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h6.47a5.53 5.53 0 0 1-2.4 3.63v3h3.86c2.26-2.08 3.57-5.15 3.57-8.87z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09A12 12 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.27 14.29A7.21 7.21 0 0 1 4.89 12c0-.8.14-1.57.38-2.29V6.62H1.29A12 12 0 0 0 0 12c0 1.94.46 3.77 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0A12 12 0 0 0 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg></span> Google review</span>
+          <span class="review-more">Read full review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Myo Family Health home">
+      <img class="mark" src="assets/logo-tree.png" alt="" width="42" height="42" />
+      <span class="wordmark">
+        <b>Myo Family Health</b>
+        <span>Myofunctional Therapy</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-social">
+      <a href="https://www.instagram.com/myofamilyhealth?utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#ic-instagram"/></svg></a>
+      <a href="https://youtube.com/@myofamilyhealth?si=kYgawOLlHpWrf8bu" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#ic-youtube"/></svg></a>
+      <a href="mailto:amy@myofamilyhealth.com" aria-label="Email"><svg><use href="#ic-mail"/></svg></a>
+      <a href="tel:+17076311550" aria-label="Phone"><svg><use href="#ic-phone"/></svg></a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="#contact">Schedule a Free Consultation</a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#resources">Resources</a>
+  <a href="#contact">Contact</a>
+  <a class="btn btn-primary" href="#contact">Schedule a Free Consultation</a>
+  <div class="m-social">
+    <a href="https://www.instagram.com/myofamilyhealth?utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#ic-instagram"/></svg></a>
+    <a href="https://youtube.com/@myofamilyhealth?si=kYgawOLlHpWrf8bu" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#ic-youtube"/></svg></a>
+    <a href="mailto:amy@myofamilyhealth.com" aria-label="Email"><svg><use href="#ic-mail"/></svg></a>
+    <a href="tel:+17076311550" aria-label="Phone"><svg><use href="#ic-phone"/></svg></a>
+  </div>
+</div>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-inner">
+      <span class="eyebrow reveal">Myofunctional Therapy</span>
+      <h1 class="reveal" data-delay="1">Breathe Better.<br /><span class="serif-accent">Live Better.</span></h1>
+      <p class="sub reveal" data-delay="2">Discover how myofunctional therapy can help your family enjoy a healthier, happier life — through better breathing, sleep, and tongue function.</p>
+      <div class="hero-ctas reveal" data-delay="3">
+        <a class="btn btn-ghost btn-lg" href="#about">Learn More</a>
+      </div>
+      <div class="hero-trust reveal" data-delay="4">
+        <span><b>In-person</b> &amp; Online</span>
+        <span class="dot"></span>
+        <span>Sacramento Valley &amp; SF Bay Area</span>
+        <span class="dot"></span>
+        <span>All ages welcome</span>
+      </div>
+    </div>
+    <div class="hero-portrait-col reveal" data-delay="2">
+      <div class="hero-portrait">
+        <div class="portrait-ring">
+          <img src="assets/hero-amy.jpeg" alt="Amy Rondoni, Certified Orofacial Myologist" />
+        </div>
+        <span class="portrait-tag">
+          <span class="leaf"><svg><use href="#ic-leaf"/></svg></span>
+          <span><b>Amy Rondoni</b></span>
+        </span>
+      </div>
+      <a class="btn btn-primary btn-lg hero-portrait-cta" href="#contact">Schedule a Free Consultation <svg><use href="#ic-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about section-pad" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <span class="eyebrow reveal">Welcome</span>
+      <h2 class="section-head reveal" data-delay="1" style="font-size:clamp(32px,4.6vw,52px);margin-top:16px;">Welcome to <span class="accent-underline">Myo Family Health</span></h2>
+      <p class="big reveal" data-delay="1" style="margin-top:18px;">Creating happier, healthier lives through myofunctional therapy.</p>
+      <p class="reveal" data-delay="2">We take a whole-person approach to oral and facial muscle function. By retraining the tongue, lips, and breathing patterns, we help correct the root causes behind sleep, posture, and developmental concerns — not just the symptoms.</p>
+      <p class="reveal" data-delay="2">We work hand in hand with your dentists, orthodontists, ENTs, and physicians, so your care is coordinated and effective. The result is a stronger foundation for nasal breathing, proper tongue rest posture, and lifelong oral health.</p>
+      <div class="about-badges reveal" data-delay="3">
+        <div class="badge-wrap">
+          <button class="badge" type="button" data-pop aria-expanded="false"><span class="ic"><svg><use href="#ic-wind"/></svg></span> Nasal breathing</button>
+          <div class="badge-pop" role="tooltip">
+            <b>Why nasal breathing matters</b>
+            <p>Breathing through the nose filters, warms, and humidifies air, and boosts oxygen uptake. It supports deeper sleep, calmer focus, and proper facial and airway development — while chronic mouth breathing is linked to snoring, fatigue, and dental issues.</p>
+          </div>
+        </div>
+        <div class="badge-wrap">
+          <button class="badge" type="button" data-pop aria-expanded="false"><span class="ic"><svg><use href="#ic-leaf"/></svg></span> Tongue function</button>
+          <div class="badge-pop" role="tooltip">
+            <b>Why tongue function matters</b>
+            <p>When the tongue rests on the roof of the mouth, it guides jaw growth, keeps teeth aligned, and supports an open airway. Correcting tongue posture and swallowing helps with speech, eating, and lasting orthodontic results.</p>
+          </div>
+        </div>
+        <div class="badge-wrap">
+          <button class="badge" type="button" data-pop aria-expanded="false"><span class="ic"><svg><use href="#ic-users"/></svg></span> Provider partnerships</button>
+          <div class="badge-pop" role="tooltip">
+            <b>Why a care team matters</b>
+            <p>We coordinate with your dentist, orthodontist, ENT, and physician so everyone is working toward the same goals. This team approach treats root causes together and makes every treatment more effective and longer-lasting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-visual reveal" data-delay="2">
+      <div class="ph about-photo">
+        <img src="assets/about-holistic.jpg" alt="Amy Rondoni with a young client at Myo Family Health" />
+      </div>
+      <div class="about-float">
+        <span class="leaf"><svg><use href="#ic-wind"/></svg></span>
+        <div>
+          <b>A holistic approach</b>
+          <span>Root causes, not symptoms</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SYMPTOMS ============ -->
+<section class="symptoms section-pad">
+  <div class="wrap">
+    <div class="symptoms-grid">
+      <div class="symptoms-visual reveal">
+        <div class="ph">
+          <svg class="ph-icon"><use href="#ic-moon"/></svg>
+          <span class="ph-label">photo: person looking tired / restless</span>
+        </div>
+      </div>
+      <div class="symptoms-text">
+        <h2 class="reveal" data-delay="1" style="font-size:clamp(32px,4.6vw,52px);margin-top:0;">Is this you?</h2>
+        <div class="check-list">
+          <button type="button" class="check-item reveal" data-delay="1" data-icon="ic-moon" data-title="Mouth breathing, snoring, or sleep apnea" data-desc="Breathing through the mouth — day or night — can disrupt sleep, lower oxygen intake, and affect how the face and airway develop. Myofunctional therapy restores nasal breathing and proper tongue posture to support quiet, restful sleep."><span class="ic"><svg><use href="#ic-moon"/></svg></span> Mouth breathing, snoring, or sleep apnea</button>
+          <button type="button" class="check-item reveal" data-delay="1" data-icon="ic-cloud" data-title="Brain fog, daytime fatigue, or frequent naps" data-desc="Poor sleep quality from disordered breathing leaves you drained during the day. Improving airway function and breathing patterns helps restore steady energy and mental clarity."><span class="ic"><svg><use href="#ic-cloud"/></svg></span> Brain fog, daytime fatigue, or frequent naps</button>
+          <button type="button" class="check-item reveal" data-delay="2" data-icon="ic-smile" data-title="Crooked teeth even after braces" data-desc="When the tongue doesn't rest on the roof of the mouth, it can push teeth out of alignment — even after orthodontic work. Correcting tongue posture helps protect and maintain your results."><span class="ic"><svg><use href="#ic-smile"/></svg></span> Crooked teeth even after braces</button>
+          <button type="button" class="check-item reveal" data-delay="2" data-icon="ic-zap" data-title="Frequent headaches or neck &amp; shoulder pain" data-desc="Overworked jaw and neck muscles from improper oral posture and breathing can trigger tension headaches and chronic pain. Retraining these muscles relieves the underlying strain."><span class="ic"><svg><use href="#ic-zap"/></svg></span> Frequent headaches or neck &amp; shoulder pain</button>
+          <button type="button" class="check-item reveal" data-delay="3" data-icon="ic-target" data-title="Attention deficit" data-desc="Fragmented sleep and low oxygen can mimic or worsen attention difficulties, especially in children. Better breathing often improves focus and behavior."><span class="ic"><svg><use href="#ic-target"/></svg></span> Attention deficit</button>
+          <button type="button" class="check-item reveal" data-delay="3" data-icon="ic-book" data-title="Trouble learning &amp; retaining information" data-desc="Restful sleep is essential for memory and learning. Resolving airway and breathing issues helps the brain consolidate and recall information."><span class="ic"><svg><use href="#ic-book"/></svg></span> Trouble learning &amp; retaining information</button>
+          <button type="button" class="check-item reveal" data-delay="4" data-icon="ic-cup" data-title="Picky, messy, or loud eating" data-desc="Weak or uncoordinated oral muscles can make chewing and swallowing difficult, leading to picky or messy eating. Therapy strengthens and coordinates these muscles."><span class="ic"><svg><use href="#ic-cup"/></svg></span> Picky, messy, or loud eating</button>
+          <button type="button" class="check-item reveal" data-delay="4" data-icon="ic-activity" data-title="Thumb-sucking or nail-biting" data-desc="These habits can reshape the mouth and affect tongue and jaw development. Myofunctional therapy gently helps unwind them and establish healthy oral patterns."><span class="ic"><svg><use href="#ic-activity"/></svg></span> Thumb-sucking or nail-biting</button>
+        </div>
+        <p class="root-note reveal" data-delay="2">These aren't separate problems — they often trace back to the same source: how the tongue rests, how you breathe, and how the muscles of the mouth and face function. <strong>Rather than managing symptoms one by one, myofunctional therapy retrains those underlying patterns</strong> — restoring nasal breathing and proper tongue posture so the body can heal at the root.</p>
+      </div>
+    </div>
+
+    <div class="symptoms-callout reveal">
+      <h3>If so, you or your family could benefit from myofunctional therapy.</h3>
+      <a class="btn btn-lg" href="#contact">Schedule a Free Consultation <svg><use href="#ic-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESOURCES ============ -->
+<section class="resources section-pad" id="resources">
+  <div class="wrap">
+    <div class="section-head reveal" style="max-width:640px;margin-inline:auto;text-align:center;">
+      <span class="eyebrow">Resources</span>
+      <h2>Learn at your own pace</h2>
+      <p class="lead">Helpful starting points for families exploring myofunctional therapy — from the basics to working with your care team.</p>
+    </div>
+    <div class="res-grid">
+      <article class="res-card reveal" data-delay="1">
+        <span class="ic"><svg><use href="#ic-book"/></svg></span>
+        <h3>What is Myofunctional Therapy?</h3>
+        <p>A plain-language guide to the muscles, habits, and breathing patterns we work with — and why they matter.</p>
+        <a class="link" href="#guide-myo" data-modal="guide-myo">Read the guide <svg><use href="#ic-arrow"/></svg></a>
+      </article>
+      <article class="res-card reveal" data-delay="2">
+        <span class="ic"><svg><use href="#ic-help"/></svg></span>
+        <h3>Frequently Asked Questions</h3>
+        <p>What to expect, who it's for, how long it takes, and how therapy fits alongside dental and medical care.</p>
+        <a class="link" href="#faq" data-modal="faq">Browse FAQs <svg><use href="#ic-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact section-pad" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <span class="eyebrow">Get Started</span>
+      <h2 style="font-size:clamp(30px,4.2vw,46px);margin-top:16px;">Schedule a free consultation</h2>
+      <p class="lead">Tell us a little about you and we'll be in touch to find a time — in person or online, whichever suits your family.</p>
+      <div class="contact-rows">
+        <div class="contact-row">
+          <span class="ic"><svg><use href="#ic-pin"/></svg></span>
+          <div><b>Three convenient locations</b><span>Vacaville, Walnut Creek &amp; Danville, CA</span></div>
+        </div>
+        <div class="contact-row">
+          <span class="ic"><svg><use href="#ic-monitor"/></svg></span>
+          <div><b>In-person &amp; online</b><span>Serving the Sacramento Valley &amp; SF Bay Area</span></div>
+        </div>
+        <div class="contact-row">
+          <span class="ic"><svg><use href="#ic-phone"/></svg></span>
+          <div><b>Call or text</b><span>(707) 631-1550</span></div>
+        </div>
+        <div class="contact-row">
+          <span class="ic"><svg><use href="#ic-mail"/></svg></span>
+          <div><b>Email</b><span>amy@myofamilyhealth.com</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-widget reveal" data-delay="1">
+      <div class="widget-tabs" role="tablist" aria-label="Contact options">
+        <button class="widget-tab active" role="tab" aria-selected="true" data-tab="book">
+          <svg><use href="#ic-calendar"/></svg> Book appointment
+        </button>
+        <button class="widget-tab" role="tab" aria-selected="false" data-tab="message">
+          <svg><use href="#ic-mail"/></svg> Send a message
+        </button>
+      </div>
+      <div class="widget-frame" data-panel="book">
+        <iframe
+          src="https://amy-rondoni.clientsecure.me/widget"
+          width="100%"
+          height="800"
+          frameborder="0"
+          scrolling="no"
+          title="Request an Appointment - Myo Family Health"
+          loading="lazy">
+        </iframe>
+      </div>
+      <div class="widget-frame" data-panel="message" hidden>
+        <iframe
+          src="https://amy-rondoni.clientsecure.me/contact-widget"
+          width="100%"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+          title="Contact Myo Family Health"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="contact-form reveal" data-delay="1" hidden>
+      <form id="consult-form" novalidate>
+        <h3>Request your consultation</h3>
+        <p class="fhint">Free, no obligation. We typically respond within one business day.</p>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-name">Full name</label>
+            <input id="f-name" name="name" type="text" data-validate="text" placeholder="Jane Doe" autocomplete="name" />
+            <span class="err">Please enter your name.</span>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" data-validate="phone" placeholder="(707) 631-1550" autocomplete="tel" />
+            <span class="err">Enter a valid phone number.</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" data-validate="email" placeholder="you@email.com" autocomplete="email" />
+          <span class="err">Enter a valid email address.</span>
+        </div>
+        <div class="field">
+          <label for="f-format">Preferred format</label>
+          <select id="f-format" name="format" data-validate="text">
+            <option value="">Select an option…</option>
+            <option>In-person — Vacaville, CA</option>
+            <option>In-person — Walnut Creek, CA</option>
+            <option>In-person — Danville, CA</option>
+            <option>Online (telehealth)</option>
+            <option>No preference</option>
+          </select>
+          <span class="err">Please choose a format.</span>
+        </div>
+        <div class="field">
+          <label for="f-msg">What brings you in? <span style="font-weight:500;color:var(--slate-faint);">(optional)</span></label>
+          <textarea id="f-msg" name="message" placeholder="Snoring, mouth breathing, tongue-tie, post-orthodontic concerns…"></textarea>
+        </div>
+        <button class="btn btn-primary btn-lg" type="submit">Request Consultation <svg><use href="#ic-arrow"/></svg></button>
+      </form>
+      <div class="form-success">
+        <span class="ic"><svg><use href="#ic-check"/></svg></span>
+        <h3>Thank you — we've got it!</h3>
+        <p>Amy will reach out within one business day to schedule your free consultation. Take a deep breath; you're in good hands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ GUIDE MODAL ============ -->
+<div class="modal" id="guide-myo" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="guide-title">
+    <button class="modal-close" aria-label="Close" data-close>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal-scroll">
+      <span class="eyebrow">The Basics</span>
+      <h2 id="guide-title">What is Myofunctional Therapy?</h2>
+      <p class="modal-lead"><strong>Myofunctional therapy is gentle, exercise-based training for the muscles of the face, mouth, and tongue.</strong> Much like physical therapy retrains your body, it retrains how your tongue rests, how you swallow, and how you breathe — so the right muscles do the right jobs.</p>
+
+      <p>The goal is simple: <span class="accent-underline">nasal breathing, lips together, and the tongue resting gently on the roof of the mouth</span>. When those everyday patterns are in place, they support healthy jaw growth, straighter teeth, better sleep, and clearer focus — for children and adults alike.</p>
+
+      <div class="modal-points">
+        <div class="modal-point">
+          <span class="ic"><svg><use href="#ic-wind"/></svg></span>
+          <div><b>Breathe through the nose</b><span>Replacing mouth breathing with calm, consistent nasal breathing — day and night.</span></div>
+        </div>
+        <div class="modal-point">
+          <span class="ic"><svg><use href="#ic-leaf"/></svg></span>
+          <div><b>Proper tongue posture</b><span>Training the tongue to rest on the palate, where it guides healthy oral development.</span></div>
+        </div>
+        <div class="modal-point">
+          <span class="ic"><svg><use href="#ic-activity"/></svg></span>
+          <div><b>Retrain habits</b><span>Gently unwinding patterns like thumb-sucking, tongue thrust, and improper swallowing.</span></div>
+        </div>
+        <div class="modal-point">
+          <span class="ic"><svg><use href="#ic-users"/></svg></span>
+          <div><b>A coordinated team</b><span>Working alongside your dentist, orthodontist, and ENT for lasting results.</span></div>
+        </div>
+      </div>
+
+      <p class="modal-note">A typical program is a series of short, easy daily exercises practiced at home, with check-ins along the way. No two plans are identical — yours starts with a free consultation.</p>
+
+      <div class="modal-actions">
+        <a class="btn btn-primary btn-lg" href="#contact" data-close>Schedule a Free Consultation <svg><use href="#ic-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FAQ MODAL ============ -->
+<div class="modal" id="faq" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="faq-title">
+    <button class="modal-close" aria-label="Close" data-close>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal-scroll">
+      <span class="eyebrow">Common Questions</span>
+      <h2 id="faq-title">Frequently Asked Questions</h2>
+      <p class="modal-lead">A few of the things families ask most. Don't see your question? Reach out — we're happy to help.</p>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What exactly is myofunctional therapy?<span class="chev"></span></summary>
+          <div class="faq-body"><p>It's gentle, exercise-based training for the muscles of the face, mouth, and tongue. We retrain how the tongue rests, how you swallow, and how you breathe — so the right muscles do the right jobs and support healthy growth, sleep, and function.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Who can benefit — is it just for kids?<span class="chev"></span></summary>
+          <div class="faq-body"><p>People of all ages. We work with young children, teens, and adults. If you notice mouth breathing, snoring, tongue thrust, post-orthodontic relapse, or related concerns, therapy may help at any stage of life.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How long does a program take?<span class="chev"></span></summary>
+          <div class="faq-body"><p>Most programs run several months, with short daily exercises at home and regular check-ins. Because every person is different, your exact plan and timeline are set after an initial evaluation.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What happens at the first appointment?<span class="chev"></span></summary>
+          <div class="faq-body"><p>We start with a free consultation to understand your concerns and goals. From there, a full evaluation assesses tongue function, breathing, and oral posture, and we build a personalized plan together.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Do you work with my dentist or orthodontist?<span class="chev"></span></summary>
+          <div class="faq-body"><p>Yes. We partner closely with dentists, orthodontists, ENTs, and physicians so your care is coordinated. Myofunctional therapy often makes other treatments more effective and longer-lasting.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Are sessions in person or online?<span class="chev"></span></summary>
+          <div class="faq-body"><p>Both. We offer in-person visits in Vacaville, Walnut Creek, and Danville, and online telehealth sessions across the Sacramento Valley and SF Bay Area — whichever fits your family best.</p></div>
+        </details>
+      </div>
+
+      <div class="modal-actions">
+        <a class="btn btn-primary btn-lg" href="#contact" data-close>Schedule a Free Consultation <svg><use href="#ic-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ REVIEW MODAL ============ -->
+<div class="modal" id="review-modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card review-modal-card" role="dialog" aria-modal="true" aria-labelledby="review-modal-title">
+    <button class="modal-close" aria-label="Close" data-close>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal-scroll review-modal-scroll">
+      <div class="review-modal-head">
+        <span class="g-logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#4285F4" d="M23.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h6.47a5.53 5.53 0 0 1-2.4 3.63v3h3.86c2.26-2.08 3.57-5.15 3.57-8.87z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09A12 12 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.27 14.29A7.21 7.21 0 0 1 4.89 12c0-.8.14-1.57.38-2.29V6.62H1.29A12 12 0 0 0 0 12c0 1.94.46 3.77 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0A12 12 0 0 0 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg></span>
+        <div class="review-modal-meta">
+          <span class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg><svg><use href="#ic-star"/></svg></span>
+          <span class="review-modal-source" id="review-modal-title">Posted on Google</span>
+        </div>
+      </div>
+      <p class="review-modal-text" id="review-modal-text"></p>
+      <div class="modal-actions">
+        <a class="btn btn-primary btn-lg" href="#contact" data-close>Schedule a Free Consultation <svg><use href="#ic-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SYMPTOM MODAL ============ -->
+<div class="modal" id="symptom-modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card symptom-modal-card" role="dialog" aria-modal="true" aria-labelledby="symptom-modal-title">
+    <button class="modal-close" aria-label="Close" data-close>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="modal-scroll symptom-modal-scroll">
+      <span class="symptom-modal-ic"><svg><use href="#ic-moon" id="symptom-modal-use"/></svg></span>
+      <h2 id="symptom-modal-title">Symptom</h2>
+      <p class="symptom-modal-desc" id="symptom-modal-desc"></p>
+      <div class="modal-actions">
+        <a class="btn btn-primary btn-lg" href="#contact" data-close>Schedule a Free Consultation <svg><use href="#ic-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Appointments</h4>
+        <div class="foot-row">
+          <span class="ic"><svg><use href="#ic-pin"/></svg></span>
+          <div><b>Where we serve</b>Sacramento Valley &amp; San Francisco Bay Area</div>
+        </div>
+        <div class="foot-row">
+          <span class="ic"><svg><use href="#ic-monitor"/></svg></span>
+          <div><b>How we meet</b>In-person &amp; online telehealth</div>
+        </div>
+        <div class="foot-row">
+          <span class="ic"><svg><use href="#ic-mail"/></svg></span>
+          <div><a href="mailto:amy@myofamilyhealth.com">amy@myofamilyhealth.com</a></div>
+        </div>
+        <div class="foot-row">
+          <span class="ic"><svg><use href="#ic-phone"/></svg></span>
+          <div><a href="tel:+17076311550">(707) 631-1550</a></div>
+        </div>
+      </div>
+
+      <div class="footer-col center">
+        <span class="footer-brand">
+          <img class="mark" src="assets/logo-tree.png" alt="" width="52" height="52" />
+          <b>Myo Family Health</b>
+        </span>
+        <div class="footer-meta">
+          <div class="name">Amy Rondoni</div>
+          <div style="margin-top:12px;"><a href="tel:+17076311550">(707) 631-1550</a></div>
+          <div style="margin-top:12px;">190 South Orchard, Suite C200, Vacaville, CA<br />2651 Oak Grove Road, Walnut Creek, CA<br />4135 Blackhawk Plaza Circle, Suite 100, Danville, CA</div>
+        </div>
+      </div>
+
+      <div class="footer-col" style="display:flex;flex-direction:column;align-items:inherit;">
+        <h4>Explore</h4>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#resources">Resources</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Disclaimer</a>
+          <a href="#">Terms of Use</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/myofamilyhealth?utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#ic-instagram"/></svg></a>
+          <a href="https://youtube.com/@myofamilyhealth?si=kYgawOLlHpWrf8bu" target="_blank" rel="noopener" aria-label="YouTube"><svg><use href="#ic-youtube"/></svg></a>
+          <a href="mailto:amy@myofamilyhealth.com" aria-label="Email"><svg><use href="#ic-mail"/></svg></a>
+          <a href="tel:+17076311550" aria-label="Phone"><svg><use href="#ic-phone"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="disclaimer">The information on this site is for educational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified provider regarding any medical condition.</p>
+      <p class="copy">© 2026 Myo Family Health, LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
