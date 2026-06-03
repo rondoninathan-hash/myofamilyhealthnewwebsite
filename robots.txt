@@ -1,0 +1,7 @@
+# robots.txt for Myo Family Health
+# https://www.myofamilyhealth.com/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.myofamilyhealth.com/sitemap.xml
